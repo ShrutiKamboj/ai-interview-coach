@@ -1,0 +1,36 @@
+# Job family: Software Engineering.
+# Shared by every level in this family (e.g. SDE 1-3, Lead, Staff, Principal).
+# Levels live in the roles/ folder next to this file and pick which competencies to emphasise.
+
+id: software-engineering
+name: Software Engineering
+version: 1
+
+# What each scope level typically looks like in this job family.
+# Helps the grader interpret the base rubric's scope criterion.
+scope_examples:
+  1: Fixing a bug or completing an assigned ticket.
+  2: Delivering a feature or project within own team.
+  3: Coordinating with other teams, or leading own team through an unclear problem.
+  4: Setting technical direction across teams, driving a cross-team initiative, or changing how the wider engineering org works.
+
+# Pool of behavioral competencies for this job family.
+competencies:
+  - id: conflict
+    name: Disagreement and conflict
+  - id: influence
+    name: Influence without authority
+  - id: ambiguity
+    name: Handling ambiguity
+  - id: failure
+    name: Failure or mistake
+  - id: mentoring
+    name: Growing and mentoring others
+  - id: prioritisation
+    name: Prioritisation and trade-offs
+  - id: team-delivery
+    name: Leading a team through delivery
+  - id: technical-direction
+    name: Driving technical direction
+  - id: pressure
+    name: Delivering under pressure

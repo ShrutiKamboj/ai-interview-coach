@@ -59,6 +59,23 @@ One short entry per real decision: what was decided, why, and what was traded of
 
 ---
 
+## 006 — Layered rubric: base, job family, role level, company
+**Date:** 2026-10-11
+
+**Decision:** Evaluation config is split into layers:
+- `config/rubrics/` — role-neutral criteria that judge any answer (structure, ownership, impact, scope, reflection)
+- `config/families/<family>/family.yaml` — per job family (e.g. software engineering): what each scope level looks like, and the full pool of competencies
+- `config/families/<family>/roles/<level>.yaml` — per level (e.g. Lead, Staff): the minimum score that meets the bar for each criterion, and which competencies to emphasise
+- `config/companies/` (later) — optional company values overlay
+
+Roles are nested inside their family's folder, so the folder is the single source of truth for which family a role belongs to (no `family:` field to fall out of sync), and level names can repeat across families without clashing.
+
+**Why:** Most criteria are the same for any job. What varies by job is what "scope" looks like and which competencies exist; what varies by level is the bar and the competency focus. Separating them means a new level or a new job family is a small config file, with no change to the base rubric or code.
+
+**Trade-off:** More files and a lookup step to join them by id, instead of one self-contained file.
+
+---
+
 ## Open decisions
 - Which LLM provider and model to use
 - CLI or minimal local web page for the Phase 1 interface

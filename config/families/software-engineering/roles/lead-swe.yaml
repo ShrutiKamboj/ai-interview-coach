@@ -1,0 +1,27 @@
+# Role profile: Lead Software Engineer.
+# Level-specific expectations on top of the base rubric and this job family.
+# The family comes from the folder this file sits in.
+# Bars are starting judgment calls; tune them as you use the coach.
+
+id: lead-swe
+name: Lead Software Engineer
+version: 1
+base_rubric: base-behavioral
+
+# Minimum score per criterion that counts as meeting the bar for this level.
+bar:
+  structure: 3
+  ownership: 3
+  impact: 3
+  scope: 3
+  reflection: 3
+
+# Competency ids from family.yaml to emphasise at this level.
+competencies:
+  - conflict
+  - team-delivery
+  - ambiguity
+  - failure
+  - mentoring
+  - prioritisation
+  - pressure

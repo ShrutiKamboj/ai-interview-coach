@@ -1,0 +1,58 @@
+# Base rubric for behavioral interview answers.
+# Role-neutral: applies to every answer, for any role and any company.
+# Job families and their levels live in config/families/<family>/.
+# Company values will live in config/companies/ as optional overlays.
+
+id: base-behavioral
+version: 1
+scale:
+  1: Missing
+  2: Weak
+  3: Solid
+  4: Strong
+
+criteria:
+  - id: structure
+    name: Structure
+    question: Is the story easy to follow, with a clear situation, task, action and result?
+    levels:
+      1: No discernible structure; hard to tell what happened or why it mattered.
+      2: Some STAR elements present, but key parts are missing, out of order, or buried in detail.
+      3: Clear situation, task, action and result; mostly concise.
+      4: Tight and well-paced; context is brief, and most of the time is spent on actions and results.
+
+  - id: ownership
+    name: Ownership
+    question: Is the candidate's personal contribution clear and distinct from the team's?
+    levels:
+      1: Mostly "we"; the candidate's own role cannot be identified.
+      2: Own role mentioned, but vague ("I helped with", "I was involved in").
+      3: Specific personal actions and decisions are clear.
+      4: Clear personal actions plus the reasoning behind key decisions, including trade-offs considered.
+
+  - id: impact
+    name: Impact
+    question: Is the outcome concrete — what changed, and for whom?
+    levels:
+      1: No outcome stated, or only "it went well".
+      2: An outcome is stated but is generic or unclear in significance.
+      3: A concrete outcome tied to the actions taken.
+      4: A concrete outcome with clear significance, and evidence of how it was known.
+
+  - id: scope
+    name: Scope
+    question: How far does the candidate's influence in the story reach?
+    levels:
+      1: Limited to a single task with no wider effect.
+      2: Within the candidate's own immediate work or group.
+      3: Beyond the immediate group, or meaningful handling of ambiguity.
+      4: Broad influence across groups or the organisation, setting direction or shaping decisions without formal authority.
+
+  - id: reflection
+    name: Reflection
+    question: Does the candidate show what they learned or would do differently?
+    levels:
+      1: No reflection.
+      2: Generic lesson ("communication is important").
+      3: A specific lesson tied to this situation.
+      4: A specific lesson plus evidence it changed how they work since.
